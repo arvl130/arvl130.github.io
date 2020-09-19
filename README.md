@@ -1,2 +1,2 @@
-# arvl130.github.io
-📝 My personal blog
+# Nothing to see here yet! (:
+Come back later..
