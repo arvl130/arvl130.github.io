@@ -14,7 +14,7 @@
 	<script src="index.js"></script>
 </head>
 
-<body>
+<body onload="pageInit()">
 	<!--Page header-->
 	<div class="upper-bar">
 		<img class="nav-logo" src="/res/school-logo2.png">
@@ -53,16 +53,29 @@
 
 		<div class="page-body-content">
 			<div class="page-body-content-left">
-				<div class="page-body-content-tabpane">
-					<button class="tab-buttons active" onclick="openTab(event, 'Freshmen');">Freshmen</button>
+				<div class="page-body-content-tabpane jscript">
+					<button class="tab-buttons" onclick="openTab(event, 'Freshmen');" id="tab-button-default-open">Freshmen</button>
 					<button class="tab-buttons" onclick="openTab(event, 'Transferee');">Transferee</button>
 					<button class="tab-buttons" onclick="openTab(event, 'Special');">ALS, Cross-Enrollees, Graduate students</button>
 				</div>
+				<div class="page-body-content-tabpane html5">
+					<ul>
+						<li>
+							<a class="tab-buttons active" href="#Freshmen">Freshmen</a>
+						</li>
+						<li>
+							<a class="tab-buttons active" href="#Transferee">Transferee</a>
+						</li>
+						<li>
+							<a class="tab-buttons active" href="#Special">ALS, Cross-Enrollees, Graduate students</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 			<div class="page-body-content-right">
-				<div id="Freshmen" class="page-body-content-tab active">
+				<div id="Freshmen" class="page-body-content-tab">
 					<div class="page-body-content-tabtitle">
-						Documentary requirements:
+						Freshmen requirements:
 					</div>
 					<div class="page-body-content-tabtext">
 						<ul>
@@ -81,7 +94,7 @@
 						</ul>
 					</div>
 					<div class="page-body-content-tabtitle">
-						Academic qualifications:
+						Freshmen qualifications:
 					</div>
 					<div class="page-body-content-tabtext">
 						<ul>
@@ -94,9 +107,10 @@
 						</ul>
 					</div>
 				</div>
+				<hr class="page-body-content-tab-sep"/>
 				<div id="Transferee" class="page-body-content-tab">
 					<div class="page-body-content-tabtitle">
-						Documentary requirements:
+						Transferee requirements:
 					</div>
 					<div class="page-body-content-tabtext">
 						<ul>
@@ -118,7 +132,7 @@
 						</ul>
 					</div>
 					<div class="page-body-content-tabtitle">
-						Academic qualifications:
+						Transferee qualifications:
 					</div>
 					<div class="page-body-content-tabtext">
 						<ul>
@@ -131,6 +145,7 @@
 						</ul>
 					</div>
 				</div>
+				<hr class="page-body-content-tab-sep"/>
 				<div id="Special" class="page-body-content-tab">
 					<div class="page-body-content-tabtitle">
 						ALS A&E / PEPT passers
