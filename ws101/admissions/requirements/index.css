@@ -1,0 +1,132 @@
+/* Testing!
+
+* {
+    background-color: #ffff00;
+}
+
+.test-class {
+    background-color: #ffff00;
+}
+
+*/
+
+/* Use full window height */
+html, body {
+    height: 100%;
+}
+
+/* For sane size computation */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ddd;
+}
+
+.page-body {
+    background-color: white;
+    width: 72%;
+    margin-left: 4%;
+    margin-bottom: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.page-body-header {
+    background-color: white;
+}
+
+.page-body-header-image img {
+    width: 100%;
+}
+
+.page-body-header-text {
+    font-family: Questrial;
+    font-weight: bold;
+    font-size: 250%;
+    color: #01213c;
+}
+
+.page-body-header hr {
+    border-width: 3px;
+    border-style: solid;
+    border-color: #bf9751;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.page-body-content {
+    font-family: Open Sans;
+    display: flex;
+}
+
+.page-body-content-left {
+    flex: 1%;
+    padding: 1%;
+
+}
+
+.page-body-content-right {
+    flex: 58%;
+    padding: 1%;
+}
+
+.page-body-content-tabpane ul {
+    list-style-type: none;
+}
+
+.page-body-content-tabpane ul li {
+    height: 50px;
+    padding: 5%;
+}
+
+
+.page-body-content-tab {
+    display: none;
+}
+
+.page-body-content-tab.active {
+    display: block;
+}
+
+.page-body-content-tabtitle {
+    font-family: Questrial;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 4px;
+    margin-top: 8px;
+}
+
+.page-body-content-tabtext ul {
+    padding-left: 22px;
+}
+
+.page-body-content-tabtext ul li {
+    margin-bottom: 4px;
+}
+
+.tab-buttons {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    display: block;
+    min-height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    padding: 8px;
+    padding-left:16px;
+    background-color: white;
+}
+
+.tab-buttons.active {
+    background-color: #f0f0f0;
+}
+
+.tab-buttons:hover {
+    background-color: #ddd;
+}

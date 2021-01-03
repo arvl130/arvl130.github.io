@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Page title-->
+	<title>Application Procedure</title>
+
+	<!--Page global resources-->
+	<link rel="icon" href="/res/school-logo2.png">
+	<link rel="stylesheet" type="text/css" href="/fonts.css">
+	<link rel="stylesheet" type="text/css" href="/banner.css">
+
+	<!--Page local resources-->
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="index.js">/* Try to load JavaScript file if present */</script>
+</head>
+
+<body onload="pageInit()">
+	<!--Page header-->
+	<div class="upper-bar">
+		<img class="nav-logo" src="/res/school-logo2.png">
+		<h2 class="school-name">Larby Sy College</h2>
+	</div>
+	<div class="lower-bar">
+		<div class="lower-bar-left">
+				<ul>
+					<li><a href="#">Home<hr></a></li>
+					<li><a href="#">Admission<hr></a></li>
+					<li><a href="#">Academic<hr></a></li>
+					<li><a href="#">About us<hr></a></li>
+					<li><a href="#">Contacts<hr></a></li>
+				</ul>
+		</div>
+		<div class="lower-bar-right">
+			<ul>
+				<li><a href="#">FAQ's<hr></a></li>
+				<li><a href="#">Sign in<hr></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!--Page body-->
+	<div class="page-body">
+		<div class="page-body-header">
+			<div class="page-body-header-text">
+				Application Procedure
+			</div>
+			<hr />
+			<div class="page-body-header-image">
+				<img src="/res/procedure-banner.jpg" alt="">
+				<!--IMAGE HERE-->
+			</div>
+			On-site application and interviews are suspended for the S.Y. 2020-2021. All the procedures listed below shall be completed online.
+		</div>
+
+		<div class="page-body-content">
+			<div class="page-body-content-left">
+				<div class="page-body-content-tabpane jscript">
+					<button class="tab-buttons" onclick="openTab(event, 'Process');" id="tab-button-default-open">Registration Process</button>
+					<button class="tab-buttons" onclick="openTab(event, 'Passers');">List of Passers</button>
+				</div>
+				<div class="page-body-content-tabpane html5">
+					<ul>
+						<li>
+							<a class="tab-buttons active" href="#Process">Registration Process</a>
+						</li>
+						<li>
+							<a class="tab-buttons active" href="#Passers">List of Passers</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="page-body-content-right">
+				<div id="Process" class="page-body-content-tab">
+					<div class="page-body-content-tabtitle">
+						Registration steps:
+					</div>
+					<div class="page-body-content-tabtext">
+						<ul>
+							<li>
+								Complete the documentary requirements needed for your type of student listed in <a href="/admissions/requirements/" target="_blank">this page</a>.
+							</li>
+							<li>
+								Submit your complete, scanned copy of requirements through email in the prescribed email address below:
+								<ul>
+									<li>
+										For applications to the <strong>College of Engineering</strong>: lscao-coleng@lsc.edu.ph
+									</li>
+									<li>
+										For applications to the <strong>College of Arts and Sciences</strong>: lscao-colartsci@lsc.edu.ph
+									</li>
+									<li>
+										For applications to the <strong>College of Business and Accountancy</strong>: lscao-colacc@lsc.edu.ph
+									</li>
+									<li>
+										For applications to <strong>Graduate Programs</strong>: lscao-gradstud@lsc.edu.ph
+									</li>
+								</ul>
+							</li>
+							<li>
+								Wait for the reply email specifying your schedule of interview.
+							</li>
+							<li>
+								Attend the scheduled interview at the exact date and time specified.
+								<ul>
+									<li>Applicants who need to re-schedule their interviews should contact their respective registrars at least five (5) business days before the scheduled date.</li>
+									<li>Non-attendance to this interview will automatically result in wait-listing of the applicant.</li>
+								</ul>
+							</li>
+							<li>
+								After taking the interview, expect an email announcing your admission status to the college.
+							</li>
+							<li>
+								Accepted applicants shall be sent a Pre-Enrollment Form, detailing your courses to be enrolled, assessed fees, and payment instructions.
+							</li>
+							<li>
+								Submit a scanned copy of the Pre-Enrollment Form and receipts through email.
+							</li>
+							<li>
+								Students will be sent details of their orientation upon enrollment. Attend this school orientation which will occur a week before the start of the school year. 
+							</li>
+						</ul>
+					</div>
+					<div class="page-body-content-tabtitle small">
+						For any further inquiries, you may contact our admissions office through any of the options listed in our <a href="/contacts">Contacts</a> page.
+					</div>
+				</div>
+				<div id="Passers" class="page-body-content-tab">
+					<div class="page-body-content-tabtitle">
+						Official List of LSC Passers
+					</div>
+					<div class="page-body-content-tabtext">
+						<input id="search-field" onkeyup="updateTable()" type="text" placeholder="Search for names ...">
+						<table id="search-table">
+							<tr class="search-table-header">
+							  <th style="width:60%;">Applicant Name</th>
+							  <th style="width:40%;">Status</th>
+							</tr>
+							<tr>
+							  <td>Placido Penitente</td>
+							  <td>PASSED</td>
+							</tr>
+							<tr>
+							  <td>Juanito Pelaez</td>
+							  <td>PASSED</td>
+							</tr>
+							<tr>
+							  <td>Isagani de Leon</td>
+							  <td>WAIT-LISTED</td>
+							</tr>
+							<tr>
+							  <td>Angelo Gabriel Gwendolyne</td>
+							  <td>PASSED</td>
+							</tr>
+							<tr>
+								<td>Juan dela Cruz</td>
+								<td>WAIT-LISTED</td>
+							</tr>
+							<tr>
+								<td>Adrian Jewel Agorilla</td>
+								<td>PASSED</td>
+							</tr>
+							<tr>
+								<td>Gabriel Andres Ecleo</td>
+								<td>PASSED</td>
+							</tr>
+							<tr>
+								<td>Sean Jejomar Porras</td>
+								<td>WAIT-LISTED</td>
+							</tr>
+							<tr>
+								<td>Elseif Baroro</td>
+								<td>PASSED</td>
+							</tr>
+							<tr>
+								<td>Ounce Khlarysh Gonzales</td>
+								<td>WAIT-LISTED</td>
+							  </tr>
+						  </table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Page footer-->
+</body>
+</html>
