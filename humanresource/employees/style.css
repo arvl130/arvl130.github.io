@@ -1,0 +1,201 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-canvas {
+    background-color: #dce5e4;
+    background-position: center; /* zoom to center when necessary */
+    background-size: cover;  /* cover entire screen */
+    background-repeat: no-repeat; /* don't repeat */
+}
+
+.main-header.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7%;
+}
+
+.header-logo {
+    padding-top: 0.7%;
+    padding-bottom: 0.7%;
+}
+
+.header-logo img {
+    height: 54px;
+    margin: auto 0;
+}
+
+.header-module-name {
+    font-family: 'Aileron';
+    font-size: 160%;
+    font-weight: bold;
+    color: #3d748e;
+}
+
+.main-header.bottom {
+    background-color: #3d748e;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0.6%;
+    padding-bottom: 0.6%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header-home {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.header-home a {
+    color: white;
+}
+
+.header-home a:link {
+    text-decoration: none;
+}
+
+.header-home a:visited {
+    text-decoration: none;
+}
+
+.header-home a:hover {
+    text-decoration: underline;
+}
+
+.header-account {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 15%;
+    gap: 7%;
+}
+
+.header-account-picture {
+    text-align: right;
+    width: 20%;
+}
+
+.header-account-picture img {
+    width: 100%;
+    display: inline;
+    vertical-align: middle;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-header {
+    width: 90%;
+    margin-top: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background-color: #3d748e;
+    color: white;
+    font-family: 'Open Sans';
+    font-size: x-large;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-canvas {
+    margin: 1%;
+    margin-bottom: 5%;
+    width: 85%;
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 95%;
+    display: flex;
+    flex-direction: row;
+}
+
+.employee-list {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    flex-wrap: wrap;
+}
+
+.employee-card {
+    width: 15%;
+    background-color: #3d748e;
+}
+
+.employee-row-name {
+    font-size: small;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 6%;
+}
+
+.employee-row-icon {
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.employee-row-icon img {
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 3%;
+    padding-top: 12%;
+    padding-left: 10%;
+}
+
+.employee-row-info {
+    font-size: small;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.employee-row-info hr {
+    color: white;
+}
+
+.employee-add-button {
+    width: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.employee-add-button button {
+    text-align: center;
+    background-color: #dce5e4;
+    width: 100%;
+    height: 100%;
+    font-size: 500%;
+    color: #6c95a7;
+    border: 12px solid #6c95a7;
+    border-radius: 30px;
+}
+
+.employee-add-button button:hover {
+    background-color: #dce5e4;
+    color: #999999;
+    border: 12px solid #999999;
+}

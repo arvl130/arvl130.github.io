@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients Portal</title>
+    <link rel="icon" href="/assets/website-logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-canvas">
+        <div class="main-header">
+            <div class="main-header top">
+                <div class="header-logo">
+                    <img src="/assets/website-logo.png">
+                </div>
+                <div class="header-module-name">
+                    Patients
+                </div>
+            </div>
+            <div class="main-header bottom">
+                <div class="header-home">
+                    <a href="">Home</a>
+                </div>
+                <div class="header-account">
+                    <div class="header-account-name">
+                        Account Name
+                    </div>
+                    <div class="header-account-picture">
+                        <img src="/assets/account-default-profile-picture.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="main-form">
+            <div class="column left">
+                <div class="left-section top">
+                    <div class="label">
+                        Select Specialization
+                    </div>
+                    <div class="input-select">
+                        <select name="specialization" id="">
+                            <option value="general_physician"> General Physician</option>
+                            <option value="dental_medicine">Dental medicine</option>
+                            <option value="dermatology">Dermatology</option>
+                            <option value="dermatology">Internal medicine</option>
+                            <option value="obstetrics_gynecology">Obstetrics and Gynecology</option>
+                            <option value="ophthalmology">Ophthalmology</option>
+                            <option value="pediatrics">Pediatrics</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="left-section bottom">
+                    <div class="label">
+                        Date
+                    </div>
+                    <div class="input-select">
+                        <select name="month" id="">
+                            <option value="default">Month</option>
+                            <option value="jan">January</option>
+                            <option value="feb">February</option>
+                            <option value="mar">March</option>
+                            <option value="apr">April</option>
+                            <option value="may">May</option>
+                            <option value="jun">June</option>
+                            <option value="jul">July</option>
+                            <option value="aug">August</option>
+                            <option value="sep">September</option>
+                            <option value="oct">October</option>
+                            <option value="nov">November</option>
+                            <option value="dec">December</option>
+                        </select>
+                        <select name="year" id="">
+                            <option value="default">Year</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                        </select>
+                    </div>
+                    <div class="input-table">
+                        <table>
+                            <tr>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                            <tr>
+                                <td> </td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                            </tr>
+                            <tr>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="column right">
+                <div class="right-section top">
+                    <div class="available left">
+                        <div class="label">
+                            Available doctors
+                        </div>
+                        <div class="input-listbox">
+                            <select name="available_doctors" id="" size=2>
+                                <option value="doctor1">Doctor 1</option>
+                                <option value="doctor2">Doctor 2</option>
+                                <option value="doctor3">Doctor 3</option>
+                                <option value="doctor4">Doctor 4</option>
+                                <option value="doctor5">Doctor 5</option>
+                                <option value="doctor1">Doctor 6</option>
+                                <option value="doctor2">Doctor 7</option>
+                                <option value="doctor3">Doctor 8</option>
+                                <option value="doctor4">Doctor 9</option>
+                                <option value="doctor5">Doctor 10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="available right">
+                        <div class="label">
+                            Available slots
+                        </div>
+                        <div class="input-chooser">
+                            <div class="chooser top">
+                                <div class="chooser-label">
+                                    Morning
+                                </div>
+                                <div class="chooser-radios">
+                                    <div class="chooser-radio">
+                                        <input type="radio" name="" id="">
+                                        7:00 AM
+                                    </div>
+                                    <div class="chooser-radio">
+                                        <input type="radio" name="" id="">
+                                        7:45 AM
+                                    </div>
+                                    <div class="chooser-radio">
+                                        <input type="radio" name="" id="">
+                                        8:30 AM
+                                    </div>
+                                    <div class="chooser-radio">
+                                        <input type="radio" name="" id="">
+                                        9:45 AM
+                                    </div>
+                                    <div class="chooser-radio">
+                                        <input type="radio" name="" id="">
+                                        10:15 AM
+                                    </div>
+                                    <div class="chooser-radio">
+                                        <input type="radio" name="" id="">
+                                        11:00 AM
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chooser bottom">
+                                <div class="chooser-label">
+                                    Afternoon
+                                </div>
+                                <div class="chooser-radios">
+                                    <div class="chooser-radio">
+                                        <input type="radio" name="" id="">
+                                        12:30 PM
+                                    </div>
+                                    <div class="chooser-radio">
+                                        <input type="radio" name="" id="">
+                                        1:15 PM
+                                    </div>
+                                    <div class="chooser-radio">
+                                        <input type="radio" name="" id="">
+                                        2:00 PM
+                                    </div>
+                                    <div class="chooser-radio">
+                                        <input type="radio" name="" id="">
+                                        3:15 PM
+                                    </div>
+                                    <div class="chooser-radio">
+                                        <input type="radio" name="" id="">
+                                        4:00 PM
+                                    </div>
+                                    <div class="chooser-radio">
+                                        <input type="radio" name="" id="">
+                                        4:45 PM
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-section bottom">
+                    <div class="input-textarea">
+                        <textarea name="" id="" row="10" placeholder="Describe what you are feeling. (Optional)"></textarea>
+                    </div>
+                    <div class="actions">
+                        <div class="action-goback">
+                            <a href="/patients/">Back</a>
+                        </div>
+                        <div class="action-submit">
+                            <button type="submit">Submit</button>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,288 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-canvas {
+    background-image: url('/assets/website-background.png');
+    background-position: center; /* zoom to center when necessary */
+    background-size: cover;  /* cover entire screen */
+    background-repeat: no-repeat; /* don't repeat */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7%;
+}
+
+.header-logo {
+    padding-top: 0.7%;
+    padding-bottom: 0.7%;
+}
+
+.header-logo img {
+    height: 54px;
+    margin: auto 0;
+}
+
+.header-module-name {
+    font-family: 'Aileron';
+    font-size: 160%;
+    font-weight: bold;
+    color: #3d748e;
+}
+
+.main-header.bottom {
+    background-color: #3d748e;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0.6%;
+    padding-bottom: 0.6%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header-home {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.header-home a {
+    color: white;
+}
+
+.header-home a:link {
+    text-decoration: none;
+}
+
+.header-home a:visited {
+    text-decoration: none;
+}
+
+.header-home a:hover {
+    text-decoration: underline;
+}
+
+.header-account {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 15%;
+    gap: 7%;
+}
+
+.header-account-picture {
+    text-align: right;
+    width: 20%;
+}
+
+.header-account-picture img {
+    width: 100%;
+    display: inline;
+    vertical-align: middle;
+}
+
+
+.mini-header {
+    background-color: #3d748e;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-top: 2%;
+    width: 80%;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 2%;
+    padding-top: 1%;
+    font-family: 'Open Sans';
+    font-size: 90%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.main-form hr {
+    width: 80%;
+    color: #6c95a7;
+}
+
+.form-section {
+    margin: 1% 0;
+    width: 100%;
+}
+
+.form-header {
+    background-color: #3d748e;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    width: 60%;
+    padding: 0.5% 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 105%;
+    margin-bottom: 2%;
+}
+
+.grey-canvas {
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1% 5%;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.details-canvas {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #d9d9d9;
+    padding: 2% 5%;
+}
+
+.input-group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.input-radio {
+    padding-bottom: 1%;
+    font-size: 95%;
+}
+
+.input-radio.halfwidth {
+    width: 50%;
+}
+
+.input-radio.qtrwidth {
+    width: 25%;
+}
+
+.input-radio.nowidth {
+    width: 100%;
+}
+
+.input-radio.nowidth input[type=text] {
+    width: 60%;
+}
+
+.action-buttons {
+    width: 80%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.action-goback, .action-submit {
+    width: 20%;
+}
+
+.action-goback a {
+    display: block;
+    background-color: #3d748e;
+    color: white;
+    text-align: center;
+    padding: 7% 0;
+    font-size: 105%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.action-goback a:link {
+    text-decoration: none;
+}
+
+.action-goback a:hover {
+    background-color: white;
+    color: #3d748e;
+}
+
+.action-submit button[type=submit] {
+    width: 100%;
+    height: 100%;
+    border: 0px solid #3d748e;
+    background-color: #3d748e;
+    color: white;
+    font-weight: normal;
+    font-weight: bold;
+    font-size: 105%;
+    text-transform: uppercase;
+}
+
+
+.info-line {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.info-label {
+    width: 25%;
+}
+
+.info-input {
+    width: 60%;
+    padding-left: 1%;
+}
+
+.info-input.short {
+    width: 40%;
+    padding-right: 1%;
+}
+
+.info-input input {
+    width: 100%;
+    border: 0px solid white;
+    height: 100%;
+    padding: 2% 2%;
+}
+
+.info-button {
+    width: 20%;
+    height: 100%;
+}
+
+.info-button button {
+    width: 100%;
+    border: 0px solid #3d748e;
+    background-color: #3d748e;
+    color: white;
+    height: 100%;
+    padding: 5% 0;
+}

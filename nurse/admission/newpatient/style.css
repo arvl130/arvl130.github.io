@@ -1,0 +1,139 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-canvas {
+    background-image: url('/assets/website-background.png');
+    background-position: center; /* zoom to center when necessary */
+    background-size: cover;  /* cover entire screen */
+    background-repeat: no-repeat; /* don't repeat */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formbox {
+    font-family: 'Open Sans';
+    width: 45%;
+}
+
+
+
+.formbox-title {
+    background-color: #3d748e;
+    color: white;
+    font-weight: bold;
+    font-size: 105%;
+    padding: 1.5% 3%;
+}
+
+.formbox-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+}
+
+.row-label {
+    font-weight: bold;
+    color: #3d748e;
+    display: flex;
+    align-items: center;
+}
+
+.row-input {    
+    margin-left: 2%;
+}
+
+.qtrwidth {
+    width: 25%;
+}
+
+.halfwidth {
+    width: 50%;
+}
+
+.row-input input {
+    width: 100%;
+    border: 0px solid #dce5e4;
+    background-color: #dce5e4;
+    height: 100%;
+    padding: 2% 9%;
+    font-size: large;
+}
+
+.row-wideinput {
+    width: 100%;
+    margin-left: 2%;
+}
+
+.row-wideinput input[type=text] {
+    width: 100%;
+    border: 0px solid #dce5e4;
+    background-color: #dce5e4;
+    height: 100%;
+    padding: 1.5% 2%;
+}
+
+.formbox-body {
+    background-color: white;
+    padding: 3% 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.formbox-body hr {
+    width: 80%;
+    color: #3d748e;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.new-column {
+    padding-left: 2%;
+}
+
+.squarebox {
+    width: 6%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.formbox-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 4%;
+    gap: 2%;
+}
+
+.action-button {
+    width: 20%;
+}
+
+.action-button a {
+    background-color: #3d748e;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 6% 9%;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.action-button a:hover {
+    color: #3d748e;
+    background-color: #dce5e4;
+}

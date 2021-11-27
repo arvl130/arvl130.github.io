@@ -1,0 +1,297 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-canvas {
+    background-image: url('/assets/website-background.png');
+    background-position: center; /* zoom to center when necessary */
+    background-size: cover;  /* cover entire screen */
+    background-repeat: no-repeat; /* don't repeat */
+}
+
+.main-header.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7%;
+}
+
+.header-logo {
+    padding-top: 0.7%;
+    padding-bottom: 0.7%;
+}
+
+.header-logo img {
+    height: 54px;
+    margin: auto 0;
+}
+
+.header-module-name {
+    font-family: 'Aileron';
+    font-size: 160%;
+    font-weight: bold;
+    color: #3d748e;
+}
+
+.main-header.bottom {
+    background-color: #3d748e;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0.6%;
+    padding-bottom: 0.6%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header-home {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.header-home a {
+    color: white;
+}
+
+.header-home a:link {
+    text-decoration: none;
+}
+
+.header-home a:visited {
+    text-decoration: none;
+}
+
+.header-home a:hover {
+    text-decoration: underline;
+}
+
+.header-account {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 15%;
+    gap: 7%;
+}
+
+.header-account-picture {
+    text-align: right;
+    width: 20%;
+}
+
+.header-account-picture img {
+    width: 100%;
+    display: inline;
+    vertical-align: middle;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 2%;
+    padding-top: 1%;
+    font-family: 'Open Sans';
+    font-size: 90%;
+}
+
+.action-buttons {
+    width: 100%;
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+}
+
+.action-goback {
+    width: 12%;
+}
+
+.action-goback a {
+    display: block;
+    background-color: #3d748e;
+    color: white;
+    text-align: center;
+    padding: 7% 0;
+
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+
+.action-goback a:link {
+    text-decoration: none;
+}
+
+.action-goback a:hover {
+    background-color: white;
+    color: #3d748e;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+}
+
+.column.basic-info {
+    width: 20%;
+}
+
+.column.medical-records {
+    width: 80%;
+}
+
+.image-layer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 5%;
+}
+
+.image-outer-layer {
+    background-color: white;
+    height: 10em;
+    width: 10em;
+    padding: 4%;
+}
+
+.image-inner-layer {
+    height: 100%;
+    background-color: #edeff0;
+}
+
+.info-layer {
+    background-color: white;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-row {
+    height: 100%;
+    padding: 1% 5%;
+    margin-top: 1%;
+    font-size: 90%;
+}
+
+.top-row {
+    margin-top: 0;
+}
+
+.marine {
+    background-color: #3d748e;
+    color: white;
+}
+
+.grey {
+    background-color: #f2f2f2;
+}
+
+.big-row {
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    min-height: 100%;
+}
+
+.card {
+    width: 33.3%;
+    background-color: white;
+    padding: 0.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    background-color: #3d748e;
+    color: white;
+    font-weight: bold;
+    font-size: 105%;
+    text-transform: uppercase;
+    padding: 1% 0;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.card-entry {
+    background-color: #edeff0;
+    padding: 2%;
+    padding-bottom: 6%;
+    margin-bottom: 2%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: auto;
+}
+
+.action-add-entry {
+    width: 10%;
+}
+
+.action-add-entry button {
+    height: 100%;
+    width: 100%;
+    border: 0px solid white;
+    background-color: #edeff0;
+    color: grey;
+    font-size: large;
+}
+
+.action-add-entry button:hover {
+    background-color: grey;
+    color: #edeff0;
+}
+
+.entry-rows {
+    font-size: x-small;
+}
+
+.entry-row {
+    padding-bottom: 1%;
+}
+
+.entry-buttons {
+    width: 10%;
+    height: 100%;
+}
+
+.entry-edit button, 
+.entry-delete button {
+    border: 0px solid #edeff0;
+    background-color: #edeff0;
+    color: grey;
+    width: 100%;
+    height: 100%;
+    padding: 20% 0;
+}
+.entry-edit button:hover,
+.entry-delete button:hover {
+    background-color: grey;
+    color: #edeff0;
+    
+}

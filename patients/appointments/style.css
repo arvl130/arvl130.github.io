@@ -1,0 +1,206 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-canvas {
+    background-image: url('/assets/website-background.png');
+    background-position: center; /* zoom to center when necessary */
+    background-size: cover;  /* cover entire screen */
+    background-repeat: no-repeat; /* don't repeat */
+    height: 100%;
+}
+
+.main-header.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7%;
+}
+
+.header-logo {
+    padding-top: 0.7%;
+    padding-bottom: 0.7%;
+}
+
+.header-logo img {
+    height: 54px;
+    margin: auto 0;
+}
+
+.header-module-name {
+    font-family: 'Aileron';
+    font-size: 160%;
+    font-weight: bold;
+    color: #3d748e;
+}
+
+.main-header.bottom {
+    background-color: #3d748e;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0.6%;
+    padding-bottom: 0.6%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header-home {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.header-home a {
+    color: white;
+}
+
+.header-home a:link {
+    text-decoration: none;
+}
+
+.header-home a:visited {
+    text-decoration: none;
+}
+
+.header-home a:hover {
+    text-decoration: underline;
+}
+
+.header-account {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 15%;
+    gap: 7%;
+}
+
+.header-account-picture {
+    text-align: right;
+    width: 20%;
+}
+
+.header-account-picture img {
+    width: 100%;
+    display: inline;
+    vertical-align: middle;
+}
+
+.main-content {
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.mini-header {
+    background-color: #3d748e;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 80%;
+}
+
+.report-table {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 0.5%;
+    height: 100%;
+}
+
+.table-row {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5%;
+    height: 1.75em;
+}
+
+.column {
+    text-align: center;
+    padding: 0.25% 0;
+}
+
+.date {
+    width: 15%;
+}
+
+.time {
+    width: 15%;
+}
+
+.doctor {
+    width: 30%;
+}
+
+.specialization {
+    width: 25%;
+}
+
+.status {
+    width: 15%;
+}
+
+.marine {
+    background-color: #3d748e;
+    color: white;
+}
+
+.white {
+    background-color: #e4f1f7;
+    color: #3d748e;
+}
+
+.cyan {
+    background-color: #a2d2e8;
+    color: #3d748e;
+}
+
+.align-left {
+    text-align: left;
+    padding-left: 1%;
+}
+
+.action-buttons {
+    width: 80%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.action-goback {
+    width: 12%;
+}
+
+.action-goback a {
+    display: block;
+    background-color: #3d748e;
+    color: white;
+    text-align: center;
+    padding: 7% 0;
+}
+
+.action-goback a:link {
+    text-decoration: none;
+}
+
+.action-goback a:hover {
+    background-color: white;
+    color: #3d748e;
+}

@@ -1,0 +1,293 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-canvas {
+    background-color: #dce5e4;
+    background-position: center; /* zoom to center when necessary */
+    background-size: cover;  /* cover entire screen */
+    background-repeat: no-repeat; /* don't repeat */
+}
+
+.main-header.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7%;
+}
+
+.header-logo {
+    padding-top: 0.7%;
+    padding-bottom: 0.7%;
+}
+
+.header-logo img {
+    height: 54px;
+    margin: auto 0;
+}
+
+.header-module-name {
+    font-family: 'Aileron';
+    font-size: 160%;
+    font-weight: bold;
+    color: #3d748e;
+}
+
+.main-header.bottom {
+    background-color: #3d748e;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0.6%;
+    padding-bottom: 0.6%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header-home {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.header-home a {
+    color: white;
+}
+
+.header-home a:link {
+    text-decoration: none;
+}
+
+.header-home a:visited {
+    text-decoration: none;
+}
+
+.header-home a:hover {
+    text-decoration: underline;
+}
+
+.header-account {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 15%;
+    gap: 7%;
+}
+
+.header-account-picture {
+    text-align: right;
+    width: 20%;
+}
+
+.header-account-picture img {
+    width: 100%;
+    display: inline;
+    vertical-align: middle;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-header {
+    width: 90%;
+    margin-top: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background-color: #3d748e;
+    color: white;
+    font-family: 'Open Sans';
+    font-size: x-large;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-canvas {
+    margin: 1%;
+    margin-bottom: 5%;
+    width: 85%;
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+}
+
+.canvas-top {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+}
+
+.canvas-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.employee-action {
+    width: 20%;
+    margin-top: 1%;
+}
+
+.employee-action button {
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: 0px solid #3d748e;
+    background-color: #3d748e;
+    border-radius: 24px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.employee-action button:hover {
+    background-color: white;
+    color: #3d748e;
+}
+
+.employee-col-left {
+    width: 20%;
+}
+
+.employee-col-middle {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.employee-col-right {
+    width: 30%;
+}
+
+.employee-image {
+    background-color: #5d8b9f;
+    display: flex;
+    flex-direction: column;
+}
+
+.upload-image {
+    padding-left: 32.5%;
+    padding-right: 32.5%;
+    padding-top: 25%;
+    padding-bottom: 25%;
+}
+
+
+.upload-image-outer-ring {
+    border: 3px solid #3d748e;
+    border-radius: 8px;
+    margin: 4%;
+}
+
+.upload-image button {
+    border: 4px solid white;
+    background-color: #5d8b9f;
+    color: white;
+    font-size: 300%;
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+}
+
+.upload-image button:hover {
+    border: 4px solid #999999;
+    background-color: #5d8b9f;
+    color: #999999;
+}
+
+
+/* <hr> height don't  work for some reason,
+    so we use a div instead. */
+.upload-separator {
+    width: 95%;
+    height: 100px;
+    background-color: #3d748e;
+    height: 3px;
+    align-self: center;
+}
+
+
+.upload-text {
+    text-align: center;   
+    font-size: small;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.employee-infobox {
+    background-color: #5d8b9f;
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.infobox-title {
+    background-color: #3d748e;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.infobox-label {
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 2%;
+}
+
+.infobox-row input[type=text] {
+    width: 100%;
+    border: 2px solid #3d748e;
+    background-color: #9fbac7;
+    margin-top: 1px;
+}
+
+.employee-department-job {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+.employee-infobox.dept, .employee-infobox.job {
+    width: 50%;
+}
+
+.infobox-row select {
+    border: 2px solid #3d748e;
+    background-color: #9fbac7;
+    color: white;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.infobox-row.select {
+    margin-top: 4%;
+}
+
+.employee-action.delete button:hover {
+    background-color: lightcoral;
+    color: white;
+}

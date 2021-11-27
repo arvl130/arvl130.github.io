@@ -1,0 +1,154 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-canvas {
+    background-image: url('/assets/website-background.png');
+    background-position: center; /* zoom to center when necessary */
+    background-size: cover;  /* cover entire screen */
+    background-repeat: no-repeat; /* don't repeat */
+    height: 100%;
+}
+
+.main-header.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7%;
+}
+
+.header-logo {
+    padding-top: 0.7%;
+    padding-bottom: 0.7%;
+}
+
+.header-logo img {
+    height: 54px;
+    margin: auto 0;
+}
+
+.header-module-name {
+    font-family: 'Aileron';
+    font-size: 160%;
+    font-weight: bold;
+    color: #3d748e;
+}
+
+.main-header.bottom {
+    background-color: #3d748e;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0.6%;
+    padding-bottom: 0.6%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header-home {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.header-home a {
+    color: white;
+}
+
+.header-home a:link {
+    text-decoration: none;
+}
+
+.header-home a:visited {
+    text-decoration: none;
+}
+
+.header-home a:hover {
+    text-decoration: underline;
+}
+
+.header-account {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 15%;
+    gap: 7%;
+}
+
+.header-account-picture {
+    text-align: right;
+    width: 20%;
+}
+
+.header-account-picture img {
+    width: 100%;
+    display: inline;
+    vertical-align: middle;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+    padding: 4%;
+}
+
+.dashboard-item {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 13%;
+    border-radius: 12px;
+    height: 15em;
+}
+
+.dashboard-item a {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.item-icon {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30%;
+}
+
+.item-icon img {
+    width: 100%;
+}
+
+.item-name {
+    font-family: 'Open Sans';
+    font-size: normal;
+    font-weight: bold;
+    margin-bottom: 30%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.dashboard-item a {
+    color: black;
+}
+
+.dashboard-item a:link {
+    text-decoration: none;
+}
+
+.dashboard-item a:visited {
+    text-decoration: none;
+}
+
+.dashboard-item a:hover {
+    text-decoration: underline;
+}

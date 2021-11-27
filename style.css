@@ -1,0 +1,117 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-canvas {
+    background-image: url('/assets/website-background.png');
+    background-position: center; /* zoom to center when necessary */
+    background-size: cover;  /* cover entire screen */
+    background-repeat: no-repeat; /* don't repeat */
+    height: 100%;
+}
+
+.loginbox {
+    font-family: 'Open Sans';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.loginbox-row.top {
+    background-color: #3d748e;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    width: 22%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+
+.loginbox-row.icon {
+    background-color: white;
+    color: #3d748e;
+    width: 22%;
+    text-align: center;
+}
+
+.loginbox-row.icon img {
+    margin-top: 10%;
+    margin-bottom: 3%;
+    width: 50%;
+}
+
+.loginbox-row.main {
+    background-color: white;
+    color: #3d748e;
+    width: 22%;
+    text-align: center;
+}
+
+.loginbox-input-group {
+    width: 100%;
+}
+
+.loginbox-input-group input {
+    width: 80%;
+    border: 1px solid #ecf1f4;
+    background-color: #ecf1f4;
+    height: 100%;
+    box-sizing: border-box;
+    margin-top: 5%;
+    height: 48px;
+    padding-left: 16px;
+    font-size: 110%;
+}
+
+.loginbox-submit  {
+    margin-top: 4%;
+    text-align: center;
+}
+
+.loginbox-submit input {
+    border: 1px solid #3d748e;
+    background-color: #3d748e;
+    color: white;
+    text-transform: uppercase;
+    height: 36px;
+    width: 45%;
+    font-weight: bold;
+    font-size: 105%;
+}
+
+.loginbox-other-options {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: small;
+    font-weight: normal;
+    color: #3d748e;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.loginbox-other-options a {
+    color: #3d748e;
+}
+
+.loginbox-other-options a:link {
+    text-decoration: none;
+}
+
+.loginbox-other-options a:visited {
+    text-decoration: none;
+}
+
+.loginbox-other-options a:hover {
+    text-decoration: underline;
+}
